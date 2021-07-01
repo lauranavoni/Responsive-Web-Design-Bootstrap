@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipografía Adaptable - em - rem - @media</title>
+    <style>
+        /* https://www.dafont.com/es/ */
+        @font-face {
+            font-family: font-p;
+            src: url('./fonts/respondent/RespondentMedium_PERSONAL_USE_ONLY.otf');
+        }
+        @font-face {
+            font-family: font-h2;
+            src: url('./fonts/sweet_chili/Sweet\ Chili\ Demo.ttf');
+            font-weight: bold;
+        }
+
+        body {
+            /* font-size: 20px; */    /* font-size del padre === 1em */
+            /* font-size: 150%; */
+            /* font-size: 50%; */
+            /* font-size: 2em; */
+            font-size: 1.1em;
+        }
+
+        header {
+            /* font-size: 30px; */    /* font-size del padre === 1em */
+            font-size: 1.3em;
+            /* font-size: 1.3rem; */
+        }
+
+        p {
+            font-family: font-p;
+            font-size: 1.4em;
+        }
+
+        h2 {
+            font-family: font-h2;
+            /* font-size: 2em; */
+            font-size: 2rem;/* font-size del root (html) === 1rem === 16px */
+        }
+
+        /* max- : hasta ... px */
+        /* @media(max-width:768px) { */
+        /* min- : desde ... px */
+        @media(min-width:768px) {
+            body {
+                background-color: brown;
+                color: white;
+                font-size: 150%;
+            }
+
+            h2 {
+                font-size: 3rem;
+            }
+        }
+
+    </style>    
+</head>
+<body>
+    
+    <header>
+        <h2>Enunciado</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, at officia, magni fuga expedita error id ipsam quia qui quos ex, hic voluptatibus explicabo et eos suscipit dolore sit consequuntur?
+        </p>
+    </header>
+
+</body>
+</html>

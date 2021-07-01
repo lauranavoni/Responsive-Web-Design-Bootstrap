@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--  -------------------  VIEWPORT ---------------------- -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  ---------------------------------------------------- -->
+
+    <title>Responsive Web Design & Bootstrap - Mi Primer Sitio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!--  -------------------  JQUERY ---------------------- -->
+    <!-- https://jquery.com/ -->
+    <!-- https://www.w3schools.com/jquery/ -->
+    <!-- https://code.jquery.com/ -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- --------------------------------------------------- -->
+</head>
+<body>
+    
+    <div id="menu"></div>
+    <header>
+        <h1>Bienvenidos</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Servicio</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <div>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Nuestro Sitio</h1>
+        <img src="./imagenes/elefante.jpg" alt="">
+        <h2>Nuestro primer elemento</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime odio recusandae impedit possimus consequuntur et asperiores quod tempore numquam quo magni facilis, culpa cupiditate esse eligendi quia nulla. Animi ut accusantium, eum sit facilis reiciendis cumque, excepturi expedita odio autem nihil illo quidem vero ipsum hic. Voluptates totam nemo deserunt ipsam, est quaerat ducimus earum dolor iste molestiae fugit porro. Doloribus nulla magni, expedita possimus ipsum sint alias reiciendis voluptas praesentium dolores numquam illum placeat non quia fugit dignissimos reprehenderit minima ab quos. Maxime sequi exercitationem numquam architecto dicta eveniet ducimus et. Voluptatibus quae eligendi sit aspernatur quibusdam velit autem!
+        </p>
+
+        <div id="video-contenedor">
+            <iframe width="737" height="409" src="https://www.youtube.com/embed/amx6A91JzWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+    </main>
+
+    <script>
+        $('#menu').click(aparecer)
+        function aparecer() {
+            $('header nav').slideToggle()
+        }
+    </script>
+</body>
+</html>

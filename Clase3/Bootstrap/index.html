@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - 1era PARTE</title>
+    <!--     Bootstrap Framework CSS Responsive -->
+    <!-- https://getbootstrap.com/ -->
+    
+    <!-- Bootstrap Framework CSS (css) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Bootstrap Framework CSS (js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <h2><u>Contenido</u></h2>
+
+    <main class="container">
+
+        <section>
+            <div class="row align-items-end justify-content-between">
+                <div class="col-5 text-center text-md-right font-italic font-weight-bold">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quas asperiores facilis ipsam, voluptate fuga! Illo voluptatem, tempore vero eveniet corporis atque laborum quia sequi. Illo, autem? Vitae, nam nemo!
+                </div>
+                <div class="col-5 align-self-center border border-info rounded-circle mr-2 pl-5 pt-4 text-warning bg-dark text-capitalize">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores fugiat quaerat beatae reiciendis cupiditate nobis possimus? Autem dolorem id, deleniti officiis non, aut sint iure eveniet nam maiores expedita voluptatibus.
+                </div>
+            </div>
+        </section>
+
+        <div class="row text-center">
+            <!-- div*5{Columna $} -->
+            <div class="col-sm">Columna 1</div>
+            <div class="col-sm">Columna 2</div>
+            <div class="w-100"></div>   <!-- break -->
+
+            <div class="col-sm">Columna 3</div>
+            <div class="col-sm">Columna 4</div>
+            <div class="w-100"></div>   <!-- break -->
+
+            <div class="col-sm">Columna 5</div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 col-sm-4 col-md-5 col-lg-3 col-xl-5">
+                <p>
+                    <b>PÁRRAFO 1</b> - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure repellat excepturi facere harum consequuntur eligendi velit, maxime inventore, vitae consectetur sequi eos hic iste vero. Pariatur tempore ex odit saepe.
+                </p>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-4 col-xl-4">
+                <p>
+                    <b>PÁRRAFO 2</b> - Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis libero debitis ex nemo et. Possimus deleniti voluptatibus consequatur hic, est aliquid iste repellendus. Sit, quis maiores? Laudantium molestiae recusandae quo.
+                </p>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-5 col-xl-3 vista">
+                <p>
+                    <b>PÁRRAFO 3</b> - Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cupiditate dolorum consequatur consequuntur cumque! Fugit ex illo commodi, quasi ipsum, eum id unde minus porro, tempora ad fuga! Maiores, aliquid!
+                </p>
+            </div>
+        </div>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem minima corrupti fugiat veniam! Quaerat ea, atque similique alias possimus tempore tempora. Dolorem aut odit necessitatibus nam doloribus sed, atque iure!
+        </p>
+    </main>
+
+    <main class="container-fluid">
+
+        <div>
+            <img class="my-3 img-fluid rounded img-thumbnail float-right" width="600" src="https://www.dzoom.org.es/wp-content/uploads/2017/07/seebensee-2384369-810x540.jpg" alt="">
+        </div>
+
+        <button class="btn btn-outline-dark mr-3 my-3 btn-sm">Hazme click!</button>
+        <button class="btn btn-dark mr-3 my-3">Hazme click!</button>
+        <button class="btn btn-outline-primary btn-lg my-3 mr-3">Hazme click!</button>
+ 
+        <div class="my-2 btn-group btn-group-lg">
+            <button class="btn btn-warning">Hazme click!</button>
+            <button class="btn btn-primary">Hazme click!</button>
+            <button class="btn btn-secondary">Hazme click!</button>
+        </div>
+
+        <button id="btn-prueba">Boton Prueba</button>
+
+        <p class="my-2 btn btn-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem minima corrupti fugiat veniam! Quaerat ea, atque similique alias possimus tempore tempora. Dolorem aut odit necessitatibus nam doloribus sed, atque iure!
+        </p>
+
+        <p class="float-left float-md-right">Flotando a la Izquierda</p>
+        <p class="float-right float-md-left">Flotando a la Derecha</p>
+    </main>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipografia Adaptable</title>
+
+    <style>
+        
+        @font-face{
+            font-family: font-p;
+            src: url('./fonts/respondent/RespondentMedium_PERSONAL_USE_ONLY.otf');
+        }
+        @font-face{
+            font-family: font-h2;
+            src: url('./fonts/sweet_chili/Sweet\ Chili\ Demo.ttf');
+            font-weight: bold;
+        }
+        body{
+            /*font-size: 10px; 
+            /*font-size == 1em
+            font size: 150%;
+            font size: 2em;*/
+            font-size: 1.3em;
+
+        }
+        header{
+            font-size: 1.3rem;
+        }
+        p{
+            font-family:font-p;
+            font-size: 3em;
+        }
+        h2{
+            font-family: font-h2;
+            font-size: 2rem;
+        }
+        @media(max-width:768px){
+            body{
+                background-color: aqua;
+                color: white;
+                font-size: 150%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Enunciado</h2>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti nihil maiores rerum sequi optio assumenda,
+        commodi voluptas non rem suscipit eius natus perferendis nobis hic ipsam corporis dignissimos, fuga ea.
+    </p>
+
+</body>
+
+</html>

@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Viaoda+Libre&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Crimson Text', serif;
+    /* width: 1000px; */    /* Diseño fijo */
+    width: 100%;    /* Diseño fluido */
+    font-size: 1.4em;
+}
+
+h1 {
+    font-family: 'Viaoda Libre', cursive;
+    /* width: 50%; */
+    /* border: 1px solid red; */
+}
+
+/* nav {
+    text-transform: uppercase;
+    background-color: orange;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+} */
+
+/* nav a {
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    color: brown;
+} */
+
+h1,h2,p,body {
+    margin: 0
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+    min-width: 300px;
+    /* max-width: 1000px; */
+}
+
+header h1, header nav, header div {
+    width: 33.33%;
+    /* border: 1px solid white; */
+}
+
+header h1 {
+    font-size: 50px;
+    transition: font-size 0.4s;
+}
+
+header a {
+    width: 100px;
+    height: 30px;
+    border: 1px solid brown;
+    /* display: inline-block; */
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+    color: brown;
+
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    /* width: 70%; */    /* Diseño elástico */
+    width: 100%;         /* Diseño elástico */
+    min-width: 300px;
+    max-width: 750px;
+}
+
+main {
+    width: 100%;
+    /* background-color: gray; */
+    padding: 20px;
+
+    min-width: 300px;
+    max-width: 1000px;
+}
+
+/* ------------------------------------------------------------- */
+/*  Tipografía Adaptable: adaptación de los tamaños de los fonts */
+/* ------------------------------------------------------------- */
+main h1 {
+    font-size: 7vw;
+    transition: font-size 0.4s;
+}
+
+main h2 {
+    font-size: 5vw;
+    transition: font-size 0.4s;
+}
+
+main p {
+    font-size: 3vw;
+    transition: font-size 0.4s;
+}
+
+@media(max-width:625px) {
+    main h1 {
+        font-size: 9vw;
+    }
+    
+    main h2 {
+        font-size: 7vw;
+    }
+    
+    main p {
+        font-size: 4vw;
+    }
+}
+
+@media(max-width:400px) {
+    main h1 {
+        font-size: 1.6em;
+    }
+    
+    main h2 {
+        font-size: 1.3em;
+    }
+    
+    main p {
+        font-size: 0.85em;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+
+    header, header nav, header div {
+        font-size: 0.9em;
+    }
+}
+
+@media(min-width:1000px) {
+    main h1 {
+        font-size: 3em;
+    }
+    
+    main h2 {
+        font-size: 2em;
+    }
+    
+    main p {
+        font-size: 1.1em;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+    
+}
+
+
+
+/* ------------------------------------------------------------- */
+/*                       Media Query CSS                         */
+/* ------------------------------------------------------------- */
+/* max- hasta ... px */
+/* @media(max-width: 700px) {
+    body {
+        background-color: limegreen;
+    }
+} */
+
+/* min- desde ... px */
+/* @media(min-width: 700px) {
+    body {
+        background-color: limegreen;
+    }
+} */
+
+/* orientation portrait: Modo retrato */
+@media(orientation: portrait) {
+    body {
+        /* background-color: limegreen; */
+    }
+    h2 {
+        text-align: center;
+    }
+}
+
+/* orientation landscape: Modo paisaje */
+/* @media(orientation: landscape) {
+    body {
+        background-color: limegreen;
+    }
+} */
+
+@media(max-width:1000px) {
+    header nav {
+        align-self: flex-end;
+    }
+}
+
+@media(max-width:500px) {
+    header div {
+        align-self: flex-start;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+}
+
+
+/* ------------------------------------------------------------ */
+/*                Botón menú hamburguesa custom                 */
+/* ------------------------------------------------------------ */
+/* https://cdn3.iconfinder.com/data/icons/eightyshades/512/45_Menu-512.png */
+#menu {
+    width: 75px;
+    height: 75px;
+    background-image: url(https://cdn3.iconfinder.com/data/icons/eightyshades/512/45_Menu-512.png);
+    background-size: contain;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+/* min-width: desde ... px Y max-width: hasta ... px */
+@media(min-width:500px) and (max-width:850px) {
+    #menu {
+        display: block;
+    }
+
+    header, header nav, header div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+        line-height: 10px;
+    }
+
+    header {
+        height: 250px;
+    }
+
+    header nav {
+        width: 150px;
+        position: absolute;
+        right: 10px;
+        top: 90px;
+        border: 1px solid brown;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    header a {
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    header h1 {
+        margin-bottom: 1em;
+    }
+}
+
+/* min-width: desde ... px Y max-width: hasta ... px */
+@media(min-width:500px) and (max-width:700px) {
+    header, header div {
+        align-items: flex-start;
+    }
+}
+
+
+/* ------------------------------------------------------------ */
+/*                      Video Adaptable                         */
+/* ------------------------------------------------------------ */
+
+iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+}
+
+#video-contenedor {
+    width: 90%;
+    position: relative;
+    margin: 40px auto;
+    padding-bottom: 56.25%;    /* relación de aspecto = 16/9 (HD) -> padding-bottom = (1/relación de aspecto) * 100 % */
+}
+ 

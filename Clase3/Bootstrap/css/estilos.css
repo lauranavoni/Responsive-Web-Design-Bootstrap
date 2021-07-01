@@ -1,0 +1,60 @@
+.container {
+    background-color: limegreen;
+    color: black;
+}
+
+.container-fluid {
+    background-color: pink;
+    color: brown;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+
+body {
+    min-width: 300px;
+}
+
+@media(max-width:575px) {
+    .vista {
+        display: none;
+    }
+}
+
+section .row {
+    background-color: green;
+    height: 300px;
+}
+
+section .col-5:first-child {
+    background-color: pink;
+}
+
+section .col-5:last-child {
+    background-color: salmon;
+}
+
+section .col-5 {
+    height: 200px;
+    overflow: auto;
+    border-width: 4px !important;
+}
+
+body {
+    height: 2000px;
+}
+
+#btn-prueba {
+    margin: 30px;
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    outline: none;
+    background-color: #000;
+    color: gold;
+    box-shadow: 2px 2px 2px orange;
+}
+

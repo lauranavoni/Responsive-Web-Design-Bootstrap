@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades Viewport: width(vw) - height (vh) </title>
+
+    <style>
+        #caja {
+            /* width: 800px; */
+            /* width: 70%; */
+            width: 70vw;  /* para el width % es que vw */
+            /* height: 600px; */
+            height: 50vh;
+
+            background: red;
+            color: white;
+            text-align: center;
+            /* line-height: 600px; */
+            line-height: 50vh;
+
+            min-width: 400px;
+            max-width: 700px;
+        }
+
+        body {
+            border: 1px solid magenta;
+            min-width: 400px;
+            max-width: 1000px;
+        }
+
+        main {
+            /* font-size: 130%; */
+            font-size: 5vw;
+        }
+
+        span {
+            /* font-size: 3rem; */
+            font-size: 10vw;  /* para el font-size % es distinto que vw */
+            /* font-size: 10vh; */
+
+        }
+
+        p {
+            /* font-size: 1.2em; */
+            font-size: 1.2rem
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <main>
+        <div id="caja">
+            <span>CAJA</span>
+        </div>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quae sit amet ex temporibus vel facere tempore asperiores blanditiis vero soluta quibusdam quis tenetur sapiente illum quaerat deserunt, necessitatibus, ab nostrum. Maxime laudantium atque minima, consequatur quis provident enim dicta voluptate maiores earum quos pariatur minus fugit ipsam dolore eius sed consectetur facere deleniti praesentium quasi magni! Consectetur, nemo accusamus. Officia, velit ullam cum, accusantium autem odit impedit assumenda consequatur pariatur eveniet rem alias, suscipit voluptate eligendi sint cumque exercitationem mollitia? Ea, suscipit facere! Eveniet quod quibusdam ullam deleniti in magni omnis facere nam numquam, unde, corrupti exercitationem incidunt porro!
+        </p>
+    </main>
+
+</body>
+</html>
